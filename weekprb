@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+  long long Fibonacci(unsigned int n)
+{
+    int result[4] = {1, 1, 2, 4};
+    if (n <= 3)
+        return result[n];
+
+    return Fibonacci(n - 1) + Fibonacci(n - 2)+ Fibonacci(n - 3);
+}
+
+main()
+{
+    cout << Fibonacci(0) << endl;
+    cout << Fibonacci(1) << endl;
+    cout << Fibonacci(2) << endl;
+    cout << Fibonacci(3) << endl;
+    cout << Fibonacci(4) << endl;
+    cout << Fibonacci(5) << endl;
+    cout << Fibonacci(6) << endl;
+}
