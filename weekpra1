@@ -29,15 +29,15 @@
      }
     
      /*
-41    	构造密码的递归函数
-42    	参数说明：	char* character_set: 小写字符集
-43    		int i: 当前取舍第i个小写字符
-44    		int pass_len: 指定的密码长度
-45    		char* password: 当前已经生成的部分密码
-46    		int NumOfConsonant: 当前生成的部分密码中，辅音字母的个数
-47    		int NumOfVowel: 当前生成的部分密码中，元音字母的个数
-48    		int* NumOfPass: 当前已经生成的合法的密码个数
-49    */
+  	构造密码的递归函数
+   	参数说明：	char* character_set: 小写字符集
+    		int i: 当前取舍第i个小写字符
+    		int pass_len: 指定的密码长度
+    		char* password: 当前已经生成的部分密码
+    		int NumOfConsonant: 当前生成的部分密码中，辅音字母的个数
+   		int NumOfVowel: 当前生成的部分密码中，元音字母的个数
+   		int* NumOfPass: 当前已经生成的合法的密码个数
+    */
     void MakePassWord(char* character_set, int i, int pass_len,char* password, 
     			  int NumOfConsonant, int NumOfVowel, int * NumOfPass)
      {
@@ -85,7 +85,7 @@
     /*用冒泡法对给定字符集进行排序*/
      void SortCharacterSet(char * set)
      {
-    	int i;
+    	     int i;
      	int j;
      	char temp;
     
